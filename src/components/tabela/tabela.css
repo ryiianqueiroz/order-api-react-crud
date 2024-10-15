@@ -1,0 +1,155 @@
+* {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.Desserts {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 300px;
+}
+.Desserts img {
+  width: 100%;
+}
+.Desserts .dessert {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  display: grid;
+}
+.Desserts .dessert p {
+  margin-top: 50px;
+}
+.Desserts .add-to-cart {
+  position: absolute;
+  justify-self: center;
+  margin-top: 60%;
+  border-radius: 50px;
+  background-color: white;
+  padding: 6px 20px;
+  border: 0.5px solid rgb(119, 58, 58);
+}
+.Desserts .add-to-cart button {
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+.Desserts .add-to-cart button img {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+.Desserts .add-to-cart div img {
+  width: 20px;
+  height: 20px;
+}
+.Desserts .add-to-cart .NoButton, .Desserts .add-to-cart .NoDiv {
+  display: none;
+}
+.Desserts .add-to-cart .addDiv {
+  display: flex;
+  background-color: orangered;
+  align-items: center;
+  text-align: center;
+}
+.Desserts .add-to-cart .addDiv .icon-quantity {
+  border: 1px solid white;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.Desserts .add-to-cart .addDiv .icon-quantity:active {
+  background-color: white;
+}
+.Desserts .add-to-cart .addDiv .icon-quantity:active p {
+  color: orangered;
+}
+.Desserts .add-to-cart .addDiv .icon-quantity p {
+  margin: 0;
+}
+.Desserts .add-to-cart .addDiv p {
+  margin-top: 0px;
+  margin: auto 30px;
+  color: white;
+}
+.Desserts .orangered {
+  background-color: orangered;
+}
+.Desserts .tag {
+  max-height: 150px;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+}
+.Desserts .tag p {
+  margin: auto 0px;
+  margin-top: 2px;
+}
+.Desserts .tag .p-category {
+  color: gray;
+  font-size: 0.8rem;
+}
+.Desserts .tag .p-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.Desserts .tag .p-price {
+  color: rgb(196, 52, 0);
+  font-weight: 600;
+}
+.Desserts .img-tabela {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 321px) {
+  .Desserts {
+    max-width: 420px;
+  }
+}
+@media screen and (min-width: 421px) {
+  .Desserts {
+    max-width: 768px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .Desserts {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .Desserts .dessert .tag {
+    margin-top: 25px;
+  }
+  .Desserts .dessert .tag p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .Desserts .dessert .tag {
+    margin-top: 25px;
+  }
+  .Desserts .dessert .tag p {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=tabela.css.map */

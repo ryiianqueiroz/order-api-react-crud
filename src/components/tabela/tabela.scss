@@ -1,0 +1,188 @@
+* {
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.tabela{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin: 15px;
+}
+
+.Desserts{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 300px;
+
+    img{
+        width: 100%;
+    }
+
+    .dessert{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        position: relative;
+        display: grid;
+
+        p{
+            margin-top: 50px;
+        }
+    }
+
+    .add-to-cart{
+        position: absolute;
+        justify-self: center;
+        margin-top: 60%;
+        border-radius: 50px;
+        background-color: white;
+        padding: 6px 20px;
+        border: 0.5px solid rgb(119, 58, 58);
+
+        button{
+            border-radius: 50px;
+            background-color: white;
+            border: none;
+            display: flex;
+            font-size: 0.8rem;
+            align-items: center;
+
+            img{
+                width: 17px;
+                height: 17px;
+                margin-right: 5px;
+            }
+        }
+
+        div{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .NoButton, .NoDiv{
+            display: none;
+        }
+
+        .addDiv{
+            display: flex;
+            background-color: orangered;
+            align-items: center;
+            text-align: center;
+            
+            .icon-quantity{
+                border: 1px solid white;
+                border-radius: 50px;
+                width: 20px;
+                height: 20px;
+                align-items: center;
+                padding: 2px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                &:active{
+                    background-color: white;
+
+                    p{
+                        color: orangered;
+                    }
+                }
+
+                p{
+                    margin: 0;
+                }
+            }
+
+            p{
+                margin-top: 0px;
+                margin: auto 30px;
+                color: white;
+            }
+        }
+    }
+
+    .orangered {
+        background-color: orangered;
+    }
+
+    .tag{
+        max-height: 150px;
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+
+        p{
+            margin: auto 0px;
+            margin-top: 2px;
+        }
+
+        .p-category{
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+        .p-name{
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .p-price{
+            color: rgb(196, 52, 0);
+            font-weight: 600;
+        }
+    }
+
+    .img-tabela{
+        border-radius: 10px;
+    }
+}
+
+@media screen and ( min-width: 321px ) {
+    .Desserts{
+        max-width: 420px;
+    }
+}
+
+@media screen and ( min-width: 421px ) {
+    .Desserts{
+        max-width: 768px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and ( min-width: 769px ) {
+    .Desserts{
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+
+        .dessert{
+            .tag{
+                margin-top: 25px;
+
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( min-width: 950px ) {
+    .Desserts{
+        .dessert{
+            .tag{
+                margin-top: 25px;
+
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(233, 226, 222, 0.267);
+    padding-bottom: 5%;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal .tabela{
+    filter: brightness(0.3);
+}
+
+.modal .Order{
+    filter: brightness(0.4);
+}
+
+
+@media screen and ( min-width: 769px) {
+    .App{
+        flex-direction: row;
+        padding: 15px 3%;
+    }
+
+    .App .tabela{
+        width: 80%;
+    }
+}
