@@ -5,7 +5,7 @@ import Empty from "/assets/images/illustration-empty-cart.svg";
 import IconRemove from "/assets/images/icon-remove-item.svg";
 import CarbonNeutral from "/assets/images/icon-carbon-neutral.svg";
 import Confirmacao from "../confirmacao/confirmacao.jsx"
-import './Order.css';
+import './order.css';
 
 const Order = ({ dados, nomeExcluido, start, enviarDadosPexcluir }) => {
   const [pedido, setPedido] = useState([]);

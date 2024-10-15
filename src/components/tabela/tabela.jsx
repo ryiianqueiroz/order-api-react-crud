@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import AddToCart from "/assets/images/icon-add-to-cart.svg";
 import { useEffect, useState } from 'react';
-import './Tabela.css';
+import './tabela.css';
 import axios from "axios";
 
 const Tabela = ({ enviarDados, nomeAremover, enviarDadosExcluir }) => {
